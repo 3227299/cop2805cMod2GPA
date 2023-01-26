@@ -28,7 +28,7 @@ class Contact{
     public Contact(String fName, String lName,String email, String phone,
                        PREFREMINDER reminderPref,ZoneId timeZone){
             this.name = new StringBuilder();
-            this.name.append(fName).append(" ").append(lName);
+            this.name.append(lName).append(", ").append(fName);
             this.email = email;
             this.phone = phone;
             this.remindPref = reminderPref;
@@ -50,11 +50,11 @@ public class Appointment {
 
     private Contact contact;
     private String appointTitle;
-    private String appointmentDesc = "This is a test appointment";
+    private String appointmentDesc;
     private ZonedDateTime appointmentTime;
     private ZonedDateTime remiderTime;
 
-//Appointment Constructor
+    //Appointment Constructor
     public Appointment(String appointTitle, String appointmentDesc,Contact contact,
                        ZonedDateTime appointmentTime, ZonedDateTime remiderTime){
         this.appointmentTime = appointmentTime;
