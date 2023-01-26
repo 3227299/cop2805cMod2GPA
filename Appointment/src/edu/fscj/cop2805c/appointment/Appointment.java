@@ -5,13 +5,8 @@
 
 package edu.fscj.cop2805c.appointment;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.TimeZone;
 
 enum PREFREMINDER {NONE, TEXT, EMAIL}
 
@@ -34,8 +29,6 @@ class Contact{
             this.remindPref = reminderPref;
             this.timeZone = timeZone;
     }
-
-
 
     @Override
     public String toString(){
