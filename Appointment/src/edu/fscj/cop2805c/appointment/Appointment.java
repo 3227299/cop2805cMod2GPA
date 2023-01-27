@@ -30,6 +30,7 @@ class Contact{
             this.timeZone = timeZone;
     }
 
+    //override String
     @Override
     public String toString(){
         String s = "Contact: ";
@@ -39,6 +40,7 @@ class Contact{
 
 }
 
+//Appointment class
 public class Appointment {
 
     private Contact contact;
@@ -57,14 +59,15 @@ public class Appointment {
         this.remiderTime = remiderTime;
     }
 
+    //override String
     @Override
     public String toString(){
-        String s = "Title: ";
-        s += appointTitle + "\n" +
-        "Desc: " + appointmentDesc + "\n" +
-        contact + "\n" +
-        "Appt Date/Time: " + appointmentTime + "\n" +
-        "Reminder: " + remiderTime;
+        String s = "Appt: \n";
+        s += "\t" +"\t" +"Title: " + appointTitle + "\n" +
+        "\t" + "\t" + "Desc: " + appointmentDesc + "\n" +
+        "\t" + "\t" + contact + "\n" +
+        "\t" + "\t" +"Appt Date/Time: " + appointmentTime + "\n" +
+        "\t" + "\t" + "Reminder: " + remiderTime;
         return s;
     }
     public static void main(String[] args) {
@@ -76,7 +79,7 @@ public class Appointment {
                 "This is a test appointment", contact1,ZonedDateTime.now().plusHours(12),
                  ZonedDateTime.now().plusHours(10));
 
-        //System.out.println("Title" +);
+        //System.out.println("Appointment" +);
         System.out.println(appointment.toString());
     }
 
