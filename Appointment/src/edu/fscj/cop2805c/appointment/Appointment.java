@@ -70,6 +70,7 @@ public class Appointment {
         "\t" + "\t" + "Reminder: " + remiderTime;
         return s;
     }
+    
     public static void main(String[] args) {
 
         Contact contact1 = new Contact("John", "Smith", "JohnSmith@email.com",
