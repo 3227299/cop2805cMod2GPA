@@ -63,7 +63,7 @@ public class Appointment {
     @Override
     public String toString(){
         String s = "Appt: \n";
-        s += "\t" +"\t" +"Title: " + appointTitle + "\n" +
+        s += "\t" + "\t" +"Title: " + appointTitle + "\n" +
         "\t" + "\t" + "Desc: " + appointmentDesc + "\n" +
         "\t" + "\t" + contact + "\n" +
         "\t" + "\t" +"Appt Date/Time: " + appointmentTime + "\n" +
